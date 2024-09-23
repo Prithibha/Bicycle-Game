@@ -73,12 +73,3 @@ body {
     background-color: #333;
     padding: 5px 10px;
 }
-body {
-    touch-action: pan-x;
-}
-
-/* Make the game area responsive to the full screen width and height */
-.game-area {
-    width: 100vw;  /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-}
