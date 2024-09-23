@@ -1,0 +1,75 @@
+/* Enable horizontal touch gestures */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    touch-action: pan-x; /* Added to enable horizontal touch gestures */
+}
+
+.game-area {
+    position: relative;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    border: 5px solid #333;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.Road {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, #444 10%, #555 90%); */
+    background-size: 100% 100%;
+    background-image: url("./images/Road.jpg");
+}
+
+/* @keyframes moveRoad {
+    0% { background-position-y: 0; }
+    100% { background-position-y: 100%; }
+} */
+
+.biCycle {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    bottom: 20px;
+    left: 125px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.biCycle img {
+    transform: scale(2);
+}
+
+.object {
+    position: absolute;
+    width: 70px;
+    height: 150px;
+    top: -50px; /* Start off screen */
+}
+
+.speedBreaker {
+    /* background-color: gold; */
+    border-radius: 50%;
+    display: flex;
+}
+
+.car {
+    /* background-color: red; */
+    border-radius: 10%;
+    display: flex;
+}
+
+.score {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    padding: 5px 10px;
+}
